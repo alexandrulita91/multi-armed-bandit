@@ -7,7 +7,7 @@ Learn how to use Thompson Sampling, a simple Reinforcement Learning model to sol
 
 ## Requirements
 First of all, you need Python 3.6 or 3.7 to run the script. After this, install the required packages. 
-`pip install -r requirements.txt`
+- `pip install -r requirements.txt`
 
 ## How to run it
 Execute `python bandits.py` command to run the script.
