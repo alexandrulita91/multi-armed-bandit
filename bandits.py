@@ -11,7 +11,7 @@ if __name__ == '__main__':
     """
     Main program
     """
-    # Initialize the game
+    # Initialize game
     pygame.init()
     width, height = 1264, 380
     screen = pygame.display.set_mode((width, height))
@@ -28,7 +28,7 @@ if __name__ == '__main__':
     slot_machine_lose = pygame.image.load("assets/slot-machine-lose.png")
     slot_machine_best = pygame.image.load("assets/slot-machine-best.png")
 
-    # Setting conversion rates and number of samples
+    # Setting conversion rates and the number of samples
     conversion_rates = [0.13, 0.04, 0.18, 0.11, 0.05]
     N = 1000
     d = len(conversion_rates)
@@ -70,18 +70,18 @@ if __name__ == '__main__':
             screen.blit(game_font.render("Total rounds: {}".format(N), False, WHITE), (20, 15))
             screen.blit(game_font.render("Round: {}".format(i + 1), False, WHITE), (20, 35))
 
-            # Draw slot machines stats
+            # Drawing slot machines stats
             for j in range(d):
                 screen.blit(game_font.render("Slot machine nr. {}".format(j + 1),
                                              False, WHITE), (20, 75 + 60 * j))
                 screen.blit(game_font.render("Wins / Losses: {} / {}".format(int(pos_rewards[j]), int(neg_rewards[j])),
                                              False, WHITE), (20, 95 + 60 * j))
 
-            # If all rounds are completed, we will mark the best slot machine
+            # If all rounds are complete, we mark the best slot machine
             if i == N - 1:
                 selected = np.argmax(pos_rewards + neg_rewards)
 
-            # Drawing the slot machines
+            # Drawing slot machines
             for j in range(d):
                 if j != selected:
                     screen.blit(slot_machine_idle, (240 + 200 * j, 10))
@@ -96,7 +96,7 @@ if __name__ == '__main__':
             # Updating the screen
             pygame.display.flip()
 
-            # Next round
+            # Moving to the next round
             i = i + 1
 
         # Handling any incoming event
@@ -105,5 +105,5 @@ if __name__ == '__main__':
                 pygame.quit()
                 exit(0)
 
-        # Changing the FPS (frames per second)
+        # Changing FPS (frames per second)
         pygame.time.wait(250)
