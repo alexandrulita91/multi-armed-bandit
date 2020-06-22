@@ -7,7 +7,7 @@ import pygame
 from pygame.locals import *
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     """
     Main program
     """
