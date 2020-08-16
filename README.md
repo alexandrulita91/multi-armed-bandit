@@ -1,5 +1,5 @@
 # Multi-armed bandit
-The Multi-armed bandit problem is one of the classical reinforcements learning problems that describe the friction between the agent's exploration and exploitation.
+The multi-armed bandit problem is one of the classical reinforcements learning problems that describe the friction between the agent's exploration and exploitation.
 
 ## Requirements
 - [Python 3.6 or 3.7](https://www.python.org/downloads/release/python-360/)
