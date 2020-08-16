@@ -18,6 +18,9 @@ More details can be found in [this](http://proceedings.mlr.press/v23/agrawal12/a
 You can train the agent using the following command:
 - `pipenv run python ts_bandits.py`
 
+## Demo video
+https://www.youtube.com/watch?v=I0XmHQJPaVM
+
 ## Improvement ideas
 - create a new OpenAI Gym custom environment
 - improve the code quality
