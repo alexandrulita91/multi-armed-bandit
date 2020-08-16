@@ -1,13 +1,24 @@
 # Multi-armed bandit
-Learn how to use **Thompson Sampling**, a simple **Reinforcement Learning** model to solve the multi-armed bandit problem.
-
-## Parameters
-- **N** - number of rounds
-- **conversion_rates** - conversion rate of each slot machine
+The Multi-armed bandit problem is one of the classical reinforcements learning problems that describe the friction between the agent's exploration and exploitation.
 
 ## Requirements
-First of all, you need Python **3.6** or **3.7** to run the script. After this, install the required packages. 
-- `pip install -r requirements.txt`
+- [Python 3.6 or 3.7](https://www.python.org/downloads/release/python-360/)
+- [Pipenv](https://pypi.org/project/pipenv/)
 
-## How to run it
-Execute `python bandits.py` command to run the script.
+## How to install the packages
+You can install the required Python packages using the following command:
+- `pipenv sync`
+
+## Thompson sampling
+Thompson sampling is an algorithm for online decision problems where actions are taken sequentially in a manner that must balance between exploiting what is known to maximize immediate performance and investing to accumulate new information that may improve future performance.
+
+More details can be found in [this](http://proceedings.mlr.press/v23/agrawal12/agrawal12.pdf) paper.
+
+## How to train the agent
+You can train the agent using the following command:
+- `pipenv run python ts_bandits.py`
+
+## Improvement ideas
+- create a new OpenAI Gym custom environment
+- improve the code quality
+- remove unnecessary comments

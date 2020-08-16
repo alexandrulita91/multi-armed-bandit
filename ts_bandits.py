@@ -1,5 +1,6 @@
 """
 Multi-armed bandit problem
+Thompson sampling
 """
 
 import numpy as np
