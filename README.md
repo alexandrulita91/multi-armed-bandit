@@ -20,8 +20,3 @@ You can install the required Python packages using the following command:
 ## How to train the agent
 You can train the agent using the following command:
 - `pipenv run python ts_bandits.py`
-
-## Improvement ideas
-- create a new OpenAI Gym custom environment
-- improve the code quality
-- remove unnecessary comments
